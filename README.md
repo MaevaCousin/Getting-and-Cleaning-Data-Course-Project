@@ -11,9 +11,8 @@ The instructions for the assignment were the following:
 5.	From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 This repository contains the following documents:
-1.	HAR datasets: data, as downloaded from UCI website on 11/09/2018;
-2.	tidy_dataset.csv: dataset constructed for instructions 1 to 4;
-3.	grouped_dataset.csv: dataset constructed for instruction 5;
-4.	run_analysis.R: R script that downloads and tidies the data from HAR datasets to tidy_dataset and grouped_dataset in line with instructions;
-5.	CodeBook.md: describes the content of the original HAR datasets and of the two created datasets (tidy_dataset.csv and grouped_dataset.csv), with details on the transformation and work performed on original datasets.
-6.	This readme.md.
+1.	tidy_data.text: dataset constructed for instructions 1 to 4;
+2.	summary_data.txt: dataset constructed for instruction 5;
+3.	run_analysis.R: R script that downloads and tidies the data from HAR datasets to tidy_dataset and grouped_dataset in line with instructions;
+4.	CodeBook.md: describes the content of the original HAR datasets and of the two created datasets (tidy_dataset.csv and grouped_dataset.csv), with details on the transformation and work performed on original datasets.
+5.	This readme.md.
