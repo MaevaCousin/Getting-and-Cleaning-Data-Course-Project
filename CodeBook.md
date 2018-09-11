@@ -36,13 +36,15 @@ In particular, this work uses the following datasets:
 
 ## Data processing, tidying and summarising
 
-### First step: 'tidy_data.csv' dataset
+### First step: 'tidy_data.txt' dataset
 
 The first step of this assignment is to merge the training and test datasets ('test.txt', 'train.txt'), provide more details on the content of the dataset (activity and subject) 
 and simplify the content to keep only the features (columns) referencing the mean and standard deviation for each window sample - or 66 features for each window sample.
 
-Content of the resulting dataset, 'tidy_data.txt':
-- each row corresponds to a window sample performed by subjects from the individual and the training group (merging 'test.txt' and 'train.txt');
+The resulting dataset, 'tidy_data.txt' is obtained after step 4 of the 'run_analyis' R script.
+
+Content :
+- each row corresponds to a window sample performed by subjects from the individual and the training group (merging 'test.txt' and 'train.txt') - 10299 observations;
 - first 66 columns are the measured features, focusing on those measuring the mean and standard deviation for each feature and each window sample. These columns have been named using the 'features.txt' dataset:
   - mean and standard deviation for tBodyAcc across 3 dimensions (X, Y, Z)
   - mean and standard deviation for tGravityAcc across 3 dimensions (X, Y, Z)
@@ -63,7 +65,10 @@ Content of the resulting dataset, 'tidy_data.txt':
   - mean and standard deviation for fBodyGyroJerkMag
 - column 'subject' records the individual (number identification) having performed the activity measured in the window sample (obtained from merging the 'test.txt' dataset with the 'subject_test.txt' dataset, and 'train.txt' dataset with the 'subject_train.txt' dataset
 - column 'activity' records the activity performed in the window sample (obtained from merging the 'test.txt' dataset with the 'y_test.txt' dataset, and 'train.txt' dataset with the 'y_train.txt' dataset and using the 'activity.txt' dataset to label the variable
+(10299 observations of 68 variables)
 
-### Second step: 'summary_data.csv' dataset
+### Second step: 'summary_data.txt' dataset
 
-This dataset contains the same variable but summarises by taking the mean of each of the 66 features for each of the 30 subject performing each of the 6 activities.
+This dataset, 'summary_data.txt' is obtained in step 5 of the 'run_analyis' R script.
+It contains the same variable but summarises by taking the mean of each of the 66 features for each of the 30 subject performing each of the 6 activities. 
+(180 observations of 68 variables)
